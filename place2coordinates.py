@@ -24,7 +24,7 @@ def get_coordinates(location_name):
         }
         
         headers = {
-            "User-Agent": "LocationToCoordinates/1.0"  # OpenStreetMap API要求提供User-Agent
+            "User-Agent": "LocationToCoordinates/1.0"  # for OpenStreetMap API, provide User-Agent info
         }
         
         response = requests.get(base_url, params=params, headers=headers)
